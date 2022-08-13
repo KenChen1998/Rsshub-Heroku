@@ -42,8 +42,8 @@ pageClass: routes
 
 Type
 
-| artwork | crafts | music | writing | 
-| ---- | ---- | ---- | ---- | 
+| artwork | crafts | music | writing |
+| ---- | ---- | ---- | ---- |
 | artwork | crafts | music | writing |
 
 </RouteEn>
@@ -72,7 +72,7 @@ Type
 
 <RouteEn author="TigerCubDen" example="/furaffinity/watchers/malikshadowclaw" path="/furaffinity/watchers/:username" :paramsDesc="['Username, can find in userpage']" radar="1"/>
 
-### User's Commission Information 
+### User's Commission Information
 
 <RouteEn author="TigerCubDen" example="/furaffinity/commissions/flashlioness" path="/furaffinity/commissions/:username" :paramsDesc="['Username, can find in userpage']" radar="1"/>
 
@@ -359,7 +359,7 @@ generates
 
 <RouteEn author="yindaheng98 Rongronggg9" path="/twitter/media/:id/:routeParams?" example="/twitter/media/DIYgod" :paramsDesc="['user id', 'extra parameters, see the table above.']" radar="1" rssbud="1"/>
 
-## User following timeline
+### User following timeline
 
 <RouteEn author="DIYgod" example="/twitter/followings/DIYgod" path="/twitter/followings/:id/:routeParams?" :paramsDesc="['user id', 'extra parameters, see the table above']" radar="1" rssbud="1" selfhost="1">
 
@@ -386,6 +386,18 @@ This route requires Twitter token's corresponding id, therefore it's only availa
 ### Trends
 
 <RouteEn author="sakamossan" example="/twitter/trends/23424856" path="/twitter/trends/:woeid?" :paramsDesc="['Yahoo! Where On Earth ID. default to woeid=1 (World Wide)']" radar="1" rssbud="1"/>
+
+### Collection
+
+<RouteEn author="TonyRL" example="/twitter/collection/DIYgod/1527857429467172864" path="/twitter/collection/:uid/:collectionId/:routeParams?" :paramsDesc="['User name, should match the generated token', 'Collection ID, can be found in URL', 'extra parameters, see the table above']" radar="1" rssbud="1" selfhost="1"/>
+
+::: warning
+
+This route requires Twitter token's corresponding id, therefore it's only available when self-hosting, refer to the [Deploy Guide](/en/install/#route-specific-configurations) for route-specific configurations.
+
+:::
+
+</RouteEn>
 
 ## Vimeo
 

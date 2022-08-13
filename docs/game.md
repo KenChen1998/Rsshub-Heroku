@@ -693,7 +693,13 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 新闻中心
 
-<Route author="Jeason0228 HenryQW" example="/tencent/pvp/newsindex/all" path="/tencent/pvp/newsindex/:type" :paramsDesc="['栏目分类,all=全部,rm=热门，xw=新闻,gg=公告,hd=活动,ss=赛事']"/>
+<Route author="Jeason0228 HenryQW" example="/tencent/pvp/newsindex/all" path="/tencent/pvp/newsindex/:type" :paramsDesc="['栏目分类，见下表']">
+
+| 全部  | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |
+| --- | -- | -- | -- | -- | -- | -- |
+| all | rm | xw | gg | hd | ss | yh |
+
+</Route>
 
 ## 网易大神
 
@@ -713,7 +719,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 游戏折扣信息
 
-<Route author="MyFaith" example="/xiaoheihe/discount/pc" path="xiaoheihe/discount/:platform?" :paramsDesc="['平台, 默认为Steam']">
+<Route author="MyFaith" example="/xiaoheihe/discount/pc" path="xiaoheihe/discount/:platform?" :paramsDesc="['平台，默认为 Steam']">
 
 | Steam | PlatStation4 | Switch |
 | ----- | ------------ | ------ |
@@ -725,7 +731,13 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 新闻中心
 
-<Route author="Jeason0228" example="/lol/newsindex/all" path="/lol/newsindex/:type" :paramsDesc="['栏目分类,all=全部,zh=综合,gg=公告,ss=赛事,gl=攻略,sq=社区']"/>
+<Route author="Jeason0228" example="/lol/newsindex/all" path="/lol/newsindex/:type" :paramsDesc="['栏目分类，见下表']">
+
+| 全部  | 综合 | 公告 | 赛事 | 攻略 | 社区 |
+| --- | -- | -- | -- | -- | -- |
+| all | zh | gg | ss | gl | sq |
+
+</Route>
 
 ## 游民星空
 
@@ -760,16 +772,18 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 ### 游戏资讯
 
 <Route author="wy916787036" example="/vgn" path="/vgn/:platform?" :paramsDesc="['平台，见下表，默认为全部']">
+
 | Switch | PS4 | PC | Xbox |
-| -------- | -------- | -------- | -------- |
-| 1        | 2        | 3        | 4        |
+| ------ | --- | -- | ---- |
+| 1      | 2   | 3  | 4    |
+
 </Route>
 
 ## 游戏年轮
 
 ### 分类
 
-<Route author="nczitzk" example="/bibgame/sgame" path="/bibgame/:category?/:type?" :paramsDesc="['分类，见下表，默认为PC游戏', '类型，可在各分类页中导航栏中找到']">
+<Route author="nczitzk" example="/bibgame/sgame" path="/bibgame/:category?/:type?" :paramsDesc="['分类，见下表，默认为 PC 游戏', '类型，可在各分类页中导航栏中找到']">
 
 | PC 游戏  | PS4 游戏 | Switch 游戏 | NS 其他板块 | galgame | VR 游戏 | 3DS 游戏 | psv 游戏 | xbox360 游戏 | ps3 游戏 | 其他掌机    |
 | ------ | ------ | --------- | ------- | ------- | ----- | ------ | ------ | ---------- | ------ | ------- |
@@ -844,6 +858,18 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 ### 用户文章
 
 <Route author="ztmzzz" example="/lolapp/article/ee97e19c-4a64-4637-b916-b9ee23744d1f" path="/lolapp/article/:uuid" :paramsDesc="['用户UUID，可在文章html中获取']"/>
+
+## 掌游宝
+
+### 推荐
+
+<Route author="ztmzzz" example="/zhangyoubao/lol" path="/zhangyoubao/:category" :paramsDesc="['分类，见下表']">
+
+| 英雄联盟 | 炉石传说 | DNF | 守望先锋 | 王者荣耀 | 单机综合  | 手游综合   | 云顶之弈     | 部落冲突 | 皇室战争 | DNF 手游 | 荒野乱斗       |
+| ---- | ---- | --- | ---- | ---- | ----- | ------ | -------- | ---- | ---- | ------ | ---------- |
+| lol  | lscs | dnf | swxf | yxzj | steam | mobile | lolchess | blzz | hszz | dnfm   | brawlstars |
+
+</Route>
 
 ## 最终幻想 14
 
